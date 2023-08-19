@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-let port= process.end.PORT || 2410;
+let port= process.env.PORT || 2410;
 app.listen(port, ()=> console.log(`Node app listening on port ${port}!`));
 
 app.use(cookieParser("abcdef-3477819"));
